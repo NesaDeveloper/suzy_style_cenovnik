@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Suzy Style Makeup Artist — cenovnik usluga šminkanja u Kragujevcu.">
+  <meta name="theme-color" content="#0a0a0a">
+  <title>Suzy Style | Cenovnik</title>
+  <link rel="icon" href="assets/favicon.png" type="image/png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Great+Vibes&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="bg-texture" aria-hidden="true"></div>
+  <div class="sparkles" aria-hidden="true"></div>
+
+  <header class="hero">
+    <img src="assets/logo.webp" alt="Suzy Style Makeup Artist" class="logo" width="220" height="220">
+    <p class="tagline">Cenovnik usluga</p>
+    <div class="brush-accent" aria-hidden="true">
+      <svg viewBox="0 0 420 28" preserveAspectRatio="xMidYMid meet">
+        <defs>
+          <radialGradient id="sparkleGrad">
+            <stop offset="0%" stop-color="#fffef5"/>
+            <stop offset="50%" stop-color="#f5ecd4"/>
+            <stop offset="100%" stop-color="#d4b87a" stop-opacity="0"/>
+          </radialGradient>
+          <filter id="glow" x="-100%" y="-100%" width="300%" height="300%">
+            <feGaussianBlur stdDeviation="1.2" result="b"/>
+            <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+          </filter>
+          <filter id="softGlow" x="-80%" y="-80%" width="260%" height="260%">
+            <feGaussianBlur stdDeviation="0.6" result="b"/>
+            <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+          </filter>
+        </defs>
+
+        <g class="sparkles-layer">
+          <circle class="sp sp-1" cx="60" cy="12" r="2.8" fill="url(#sparkleGrad)" filter="url(#glow)"/>
+          <circle class="sp sp-2" cx="95" cy="6" r="2" fill="#f5ecd4" filter="url(#softGlow)"/>
+          <circle class="sp sp-3" cx="130" cy="14" r="2.6" fill="url(#sparkleGrad)" filter="url(#glow)"/>
+          <circle class="sp sp-4" cx="165" cy="5" r="1.6" fill="#fff8e7"/>
+          <circle class="sp sp-5" cx="200" cy="13" r="2.2" fill="#e8d5a3" filter="url(#softGlow)"/>
+          <circle class="sp sp-6" cx="235" cy="7" r="1.4" fill="#fffef5"/>
+          <circle class="sp sp-7" cx="270" cy="15" r="1.8" fill="#f5ecd4" filter="url(#glow)"/>
+          <circle class="sp sp-8" cx="305" cy="8" r="1.2" fill="#d4b87a" opacity="0.8"/>
+          <circle class="sp sp-9" cx="340" cy="12" r="1" fill="#f5ecd4" opacity="0.7"/>
+          <circle class="sp sp-10" cx="375" cy="6" r="0.9" fill="#e8d5a3" opacity="0.65"/>
+          <circle class="sp sp-14" cx="115" cy="10" r="1.5" fill="#c9a962" opacity="0.6"/>
+          <circle class="sp sp-15" cx="80" cy="16" r="1.1" fill="#e8d5a3" opacity="0.5"/>
+          <circle class="sp sp-16" cx="360" cy="14" r="1.3" fill="#fffef5" opacity="0.75"/>
+          <path class="sp sp-11" d="M180 4l1 3.2 3.2 1-3.2 1-1 3.2-1-3.2-3.2-1 3.2-1z" fill="#fffef5" filter="url(#glow)"/>
+          <path class="sp sp-12" d="M320 8l0.7 2 2 0.7-2 0.7-0.7 2-0.7-2-2-0.7 2-0.7z" fill="#f5ecd4"/>
+          <path class="sp sp-13" d="M250 3l0.5 1.6 1.6 0.5-1.6 0.5-0.5 1.6-0.5-1.6-1.6-0.5 1.6-0.5z" fill="#fff8e7" opacity="0.85"/>
+        </g>
+      </svg>
+    </div>
+  </header>
+
+  <main>
+    <section class="price-section">
+      <h2>Dnevna &amp; večernja šminka</h2>
+      <ul class="price-list">
+        <li>
+          <span class="service">Dnevna šminka</span>
+          <span class="dots"></span>
+          <span class="price">3.500 RSD</span>
+        </li>
+        <li>
+          <span class="service">Večernja šminka</span>
+          <span class="dots"></span>
+          <span class="price">4.500 RSD</span>
+        </li>
+        <li>
+          <span class="service">Svečana šminka</span>
+          <span class="dots"></span>
+          <span class="price">5.500 RSD</span>
+        </li>
+        <li>
+          <span class="service">Modna / editorial šminka</span>
+          <span class="dots"></span>
+          <span class="price">6.000 RSD</span>
+        </li>
+      </ul>
+    </section>
+
+    <section class="price-section featured">
+      <h2>Venčana šminka</h2>
+      <ul class="price-list">
+        <li>
+          <span class="service">Probna venčana šminka</span>
+          <span class="dots"></span>
+          <span class="price">5.000 RSD</span>
+        </li>
+        <li class="highlight">
+          <span class="service">Venčana šminka — dan venčanja</span>
+          <span class="dots"></span>
+          <span class="price">8.500 RSD</span>
+        </li>
+        <li>
+          <span class="service">Šminka za mladu + 2 osobe</span>
+          <span class="dots"></span>
+          <span class="price">20.000 RSD</span>
+        </li>
+        <li>
+          <span class="service">Dodatna osoba (venčanje)</span>
+          <span class="dots"></span>
+          <span class="price">3.500 RSD</span>
+        </li>
+      </ul>
+    </section>
+
+    <section class="price-section">
+      <h2>Dodatne usluge</h2>
+      <ul class="price-list">
+        <li>
+          <span class="service">Šminka za fotografisanje</span>
+          <span class="dots"></span>
+          <span class="price">5.000 RSD</span>
+        </li>
+        <li>
+          <span class="service">Nadogradnja trepavica</span>
+          <span class="dots"></span>
+          <span class="price">1.500 RSD</span>
+        </li>
+        <li>
+          <span class="service">Korekcija obrva</span>
+          <span class="dots"></span>
+          <span class="price">800 RSD</span>
+        </li>
+        <li>
+          <span class="service">Dolazak na lokaciju</span>
+          <span class="dots"></span>
+          <span class="price">po dogovoru</span>
+        </li>
+      </ul>
+    </section>
+
+    <aside class="note">
+      <p>Cene su informativnog karaktera. Za rezervaciju termina i tačnu ponudu, kontaktirajte nas.</p>
+    </aside>
+  </main>
+
+  <footer class="contact">
+    <div class="contact-grid">
+      <a href="tel:+381638559016" class="contact-item">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 10.8a15 15 0 006.6 6.6l2.2-2.2a1 1 0 011-.24 11.4 11.4 0 003.58.57 1 1 0 011 1V20a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.67a1 1 0 011 1 11.4 11.4 0 00.57 3.58 1 1 0 01-.24 1z" fill="currentColor"/></svg>
+        063/8559016
+      </a>
+      <a href="https://www.instagram.com/suzy_style_makeup_artist/" target="_blank" rel="noopener" class="contact-item">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5" stroke="currentColor" stroke-width="1.5" fill="none"/><circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="1.5" fill="none"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg>
+        @suzy_style_makeup_artist
+      </a>
+      <span class="contact-item">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5A2.5 2.5 0 1112 6a2.5 2.5 0 010 5.5z" fill="currentColor"/></svg>
+        Kragujevac
+      </span>
+    </div>
+  </footer>
+</body>
+</html>
