@@ -98,6 +98,13 @@ footer {
   padding: 0 0.25rem;
 }
 
+.welcome .emoji {
+  font-style: normal;
+  display: inline-block;
+  transform: none;
+  font-family: "Apple Color Emoji", "Segoe UI Emoji", "Noto Color Emoji", sans-serif;
+}
+
 .brush-accent {
   max-width: min(520px, 94vw);
   margin: 0.85rem auto 0.25rem;
@@ -276,6 +283,14 @@ main {
   color: var(--text);
   flex: 0 1 auto;
   min-width: 0;
+}
+
+.service-note {
+  display: block;
+  margin-top: 0.15rem;
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  font-style: italic;
 }
 
 .dots {
